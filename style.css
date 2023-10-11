@@ -1,0 +1,195 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Jost&family=Space+Grotesk&display=swap');
+
+
+body {
+    font-size: 15pt;
+    margin: 0;
+    background-color: #F9F9F9;
+   font-family: 'Space Grotesk', sans-serif; 
+}
+.logbox{
+   height: 580px;
+   width: 370px;
+   background-color: #FFEFEF;
+   border-radius: 10px;
+   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.logbox .btnbox{
+   height: 60px;
+   width: 100%;
+   background-color: #FFFFFF;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.logbox .btnbox .logbtn{
+   height: 60px;
+   width: 50%;
+   float: left;
+   background-color: #FFFFFF00;
+   border-top: none;
+   border-bottom: none;
+   font-size: 22px;
+   font-family: 'Space Grotesk', sans-serif;
+}
+.logbtn:active{
+   box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+.active{
+   box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+.b1{
+   border-left: none;
+   border-right: 0.5px solid #00EDFF;
+
+}
+.b2{
+   border-right: none;
+   border-left: 0.5px solid #00EDFF;
+
+}
+.input{
+  transition: ease 0.4s all;
+   height: 40px;
+   width: 90%;
+   background-color: #FFFFFF00;
+   outline:none;
+   font-size: 20px;
+   border-top: none;
+   border-left: none;
+   border-right: none;
+   border-bottom: 1px solid #00000054;
+}
+.input:hover{
+   border-bottom: 3px solid #139D00;
+   border-inline-width: 100px;
+   box-shadow: 0 0 200px 0 #0000000F;
+}
+.input::placeholder{
+   color: #5E834F;
+     font-family: 'Space Grotesk', sans-serif; 
+ 
+}
+.show{
+   position: relative;
+   top: 2px;
+   right: 70px;
+}
+.flot{
+   float: left;
+   margin: 20px;
+}
+.chek{
+  accent-color: #FF0000;
+  font-size: 30px;
+  background-color: #FF0000;
+ 
+}
+.btn{
+   height: 40px;
+   outline: none;
+   width: 93%;
+   border:none;
+   background-color: black;
+   background-image: linear-gradient(190deg, #2D2D2D,#000000);
+   color: white;
+     font-family: 'Space Grotesk', sans-serif; 
+
+}
+.reg{
+   display: none;
+}
+.none{
+   display: none;
+}
+.error{
+   display: none;
+   background-color: #FF00004F;
+   width: 300px;
+   padding: 14px;
+   color: #FF0000;
+   border-left: 8px solid red;
+}
+.ani{
+   animation: nahid 0.2s;
+}
+@keyframes nahid{ 
+   from{
+      transform: rotateZ(0deg);
+   }
+   to{
+       transform: rotateZ(360deg);
+     
+   }
+}
+.link{
+   background-color: #FFFFFF4D;
+   color: white;
+      font-family: 'Space Grotesk', sans-serif; 
+
+}
+.hedin{
+   color: coral;
+}
+.linkbox{
+   height: 100px;
+   width: 90%;
+   background-color: #979CDC;
+   box-shadow: 0 0 2px 0 black;
+   border-radius: 2px;
+}
+
+.wel{
+  color: #FFFFFF;
+ 
+  font-size: 25px;
+}
+.box{
+   font-family: 'Jost', sans-serif;
+   height: 30px;
+   width: 95%;
+   background-color: #FFFFFF00;
+   border: 0.2px solid black;
+   outline: none;
+   transition:all 0.4s ease;
+   color: #133CFF;
+   border-radius: 10px;
+}
+.box:hover{
+     border: none;
+     text-align: center;
+}
+.box1{
+   height: 170px;
+}
+.loadbg{
+   display: none;
+   position: fixed;
+   right: 0;
+   padding: 70px;
+   background-color: #E0E0E0;
+   height: 100px;
+   width: 100px;
+    animation:  load 0.3s; 
+
+}
+.load{
+  
+   height: 100px;
+   width: 100px;
+   border-top: 5px solid #1529FF;
+   border-left: 5px solid #1529FF;
+   border-right: 5px solid #1529FF;
+   border-radius: 100px;
+   border-bottom: 5px solid #1529FF00;
+}
+@keyframes load{
+   from{
+     width: 0;
+   }
+   to{width: 100px;}
+}
+.gif1{
+   height: 100%;
+   width: 100%;
+   
+}

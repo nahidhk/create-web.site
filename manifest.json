@@ -1,0 +1,22 @@
+{
+  "short_name": "myapp",
+  "name": "myapp",
+  "icons": [
+    {
+      "src": "48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "72.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    }
+   
+  ],
+  "start_url": "https://nahidhk.info",
+  "background_color": "#000000",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "description": "Test"
+}

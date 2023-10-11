@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="manifest" href="manifest.json" />
+<link href="32.png" rel="icon shortcut" sizes="3232" />
+<link href="192.png" rel="apple-touch-icon" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Create-Web.stie</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <br/><br/><br/><br/>
+   <center>
+ <section class="logbox">
+   <div class="btnbox">
+    <button id="logbtn1" onclick="login()" class="logbtn b1 active">Login</button>
+    <button id="logbtn2" onclick="regst()" class="logbtn b2">Registration</button>
+   </div> 
+   <div class="ani" id="login">
+   <h1>Login</h1>   
+   <!-- log in---->
+ <form action="login.php" method="POST">
+    
+  <label class="label" for="username"></label><br>
+  
+  <input class="input" type="text" name="username" id="username" placeholder="Username" value=""  required/> <br><br> 
+<label for="password"></label>
+<input placeholder="Password" class="input" type="password" name="password" id="password" value="" required/>
+<br>
+<div class="flot">
+<input class="chek" type="checkbox" onclick="myFunction()">Show Password
+</div>
+<br><br>
+<br><br>
+<button class="btn" type="submit">Login</button>
+    
+    
+    
+ </form>
+   </div>
+  <!-- singup --->
+  <div class="reg ani" id="reg">
+     <form action="regdata.php" method="POST">
+     <h1>Registration</h1>
+<label for="email"></label>
+<input class="input" placeholder="Email" type="email" name="email" id="email" value=""  required/>
+<br>
+
+  <label class="label" for="username"></label><br>
+  
+  <input class="input" type="text" name="username" id="username" placeholder="Username" value=""  required/>     
+<br/><br/>
+<label for="password"></label>
+<input placeholder="Password" class="input" type="password" name="password" id="passwordn" value="" required/><br><br>
+<label for="password"></label>
+<input placeholder="Confirm Password" class="input ai" type="password" name="password" id="passwordc" value="" required />
+ <br><br>
+ 
+ <div id="error" class="error">
+    <i class="fa fa-exclamation-circle" style="font-size:36px; color: red;"></i> Password Is Not Mach
+ </div>
+ <div id="none" class="none">
+   <!-- web Function-->
+      <input name="folder" class="box" placeholder="Enter Your link name" type="text"><br /><br />
+      <button onclick="data()" class="btn" type="submit">Create</button>
+<!------------------->    
+    
+    
+
+  </div>
+  
+   
+     </form>   
+  </div>
+   
+   
+ </section>
+    </center>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+</html>

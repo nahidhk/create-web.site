@@ -4,7 +4,7 @@ body{
 .tnav{
   height: 80px;
   width: 100%;
-  background-color: #FF5A00;
+  background-color: #65BFFF;
 }
 .profile{
   cursor: pointer;
@@ -17,10 +17,11 @@ body{
   
 } 
 .navt{
+  font-family: nahidhk;
   position: absolute;
   left: 10px;
-  top: 20px;
-  font-size: 30px;
+  top: 10px;
+  font-size: 40px;
   color: #FFFFFF;
 }
 .prof{
@@ -66,4 +67,8 @@ user{
 .getio{
   font-size: 16px;
   color: #575757;
+}
+@font-face {
+  font-family: nahidhk;
+  src: url("user.ttf");
 }

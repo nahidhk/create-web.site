@@ -46,6 +46,7 @@ include('not.html'); // যদি শর্ত পূর্ণ না হয়, �
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
   <link rel="stylesheet" href="tstyle.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="node.css">
@@ -58,7 +59,7 @@ include('not.html'); // যদি শর্ত পূর্ণ না হয়, �
 <section class="tnav">
   <div style="float: left;">
     <span class="navt">
-   <?php echo  $decodedData['username']?>
+   <?php echo  $decodedData['username']?>NAHID GK
    </span>
   </div>
   <div id="div1" onclick="main()" class="profile">

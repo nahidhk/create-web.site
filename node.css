@@ -1,0 +1,49 @@
+/* Style all input fields */
+input:hover {
+  border-radius: 10px;
+}
+
+#message {
+  display: none;
+  left: 32%;
+  background: #f1f1f1;
+  color: #000;
+ position: absolute;
+ top: 0;
+ width: 330px;
+ padding: 10px;
+}
+
+#message n {
+ padding: 0px 35px;
+  font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -5px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -5px;
+  content: "✖";
+}
+
+ 
+@media only screen and (max-width: 600px) {
+ #message{
+   left: 6%;
+ }
+}

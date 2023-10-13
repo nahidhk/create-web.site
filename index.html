@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+ <link rel="shortcut icon" type="image/x-icon" href="fav.png"> 
+<link rel="stylesheet" href="mobile.css">
+  <link rel="stylesheet" href="node.css">
    <link rel="manifest" href="manifest.json" />
 <link href="32.png" rel="icon shortcut" sizes="3232" />
 <link href="192.png" rel="apple-touch-icon" />
@@ -22,7 +25,16 @@
 </head>
 
 <body>
-   <br/><br/><br/><br/>
+   <!--- password strong -->
+   
+<div id="message">
+  <n id="letter" class="invalid">A <b>lowercase</b> letter</n><br>
+  <n id="capital" class="invalid">A <b>capital (uppercase)</b> letter</n><br>
+  <n id="number" class="invalid">A <b>number</b></n><br>
+  <n id="length" class="invalid">Minimum <b>8 characters</b></n>
+</div>
+	<br><br><br><br><br>
+   <!---/------------/---->
    <center>
  <section class="logbox">
    <div class="btnbox">
@@ -43,8 +55,7 @@
 <div class="flot">
 <input class="chek" type="checkbox" onclick="myFunction()">Show Password
 </div>
-<br><br>
-<br><br>
+
 <button class="btn" type="submit">Login</button>
     
     
@@ -64,7 +75,7 @@
   <input class="input" type="text" name="username" id="username" placeholder="Username" value=""  required/>     
 <br/><br/>
 <label for="password"></label>
-<input placeholder="Password" class="input" type="password" name="password" id="passwordn" value="" required/><br><br>
+<input placeholder="Password" class="input" type="password" name="password" id="passwordn" value="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required/><br><br>
 <label for="password"></label>
 <input placeholder="Confirm Password" class="input ai" type="password" name="password" id="passwordc" value="" required />
  <br><br>
@@ -74,8 +85,7 @@
  </div>
  <div id="none" class="none">
    <!-- web Function-->
-      <input name="folder" class="box" placeholder="Enter Your link name" type="text"><br /><br />
-      <button onclick="data()" class="btn" type="submit">Create</button>
+      <button onclick="data()" class="btn" type="submit">Registration</button>
 <!------------------->    
     
     

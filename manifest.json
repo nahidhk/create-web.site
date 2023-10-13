@@ -1,22 +1,22 @@
 {
-  "short_name": "myapp",
-  "name": "myapp",
+  "short_name": "Web.site",
+  "name": "Powered by Nahid HK",
   "icons": [
     {
-      "src": "48.png",
+      "src": "fav.png",
       "type": "image/png",
       "sizes": "48x48"
     },
     {
-      "src": "72.png",
+      "src": "fav.png",
       "type": "image/png",
       "sizes": "72x72"
     }
    
   ],
-  "start_url": "https://nahidhk.info",
-  "background_color": "#000000",
+  "start_url": "https://create-web.site",
+  "background_color": "#FF00E8",
   "display": "standalone",
-  "theme_color": "#000000",
-  "description": "Test"
+  "theme_color": "yellow",
+  "description": "This is a web developer"
 }

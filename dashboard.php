@@ -1,4 +1,4 @@
-<!--
+
 <?php
 if(isset($_GET['password'])) {
     $password = $_GET['password'];
@@ -14,27 +14,33 @@ if(isset($_GET['password'])) {
             if($decodedData !== null) {
                 // JSON ডেটা সঠিকভাবে ডিকোড হয়েছে
 
-                // এই সেকশনে টেবিলে ডেটা দেখানো হয়
+              
                 ?>
                 
-    --->
-
+    
 <?php
             } else {
-           header("Location: not.html");
-           exit();
+
+             
+include('not.html'); // যদি শর্ত পূর্ণ না হয়, তবে 'not.html' ফাইলটি ইনক্লুড করা হবে
+          
             }
         } else {
-   header("Location: not.html");
-           exit();
+
+        
+include('not.html'); // যদি শর্ত পূর্ণ না হয়, তবে 'not.html' ফাইলটি ইনক্লুড করা হবে
+    exit();        
         }
     } else {
-           header("Location: not.html");
-           exit();       
+
+      
+include('not.html'); // যদি শর্ত পূর্ণ না হয়, তবে 'not.html' ফাইলটি ইনক্লুড করা হবে
+
     }
 } else {
-           header("Location: not.html");
-           exit();    
+
+include('not.html'); // যদি শর্ত পূর্ণ না হয়, তবে 'not.html' ফাইলটি ইনক্লুড করা হবে
+
 }
 ?>
 <!DOCTYPE html>
@@ -52,7 +58,7 @@ if(isset($_GET['password'])) {
 <section class="tnav">
   <div style="float: left;">
     <span class="navt">
-   <?php  $decodedData['username']?>
+   <?php echo  $decodedData['username']?>
    </span>
   </div>
   <div id="div1" onclick="main()" class="profile">
@@ -66,17 +72,17 @@ if(isset($_GET['password'])) {
      
      <br>
  <user d:=z onsuspend="user">
-     @<?php  $decodedData['username']?>
+     @<?php echo  $decodedData['username']?>
 
    </user>
    </center>
 <p onclick="error()" class="email">
   <span class="utxt">
-     <?php  $decodedData['username']?> 
+     <?php echo $decodedData['username']?> 
 </span> <button class="main">main</button>
   <br>
   <span class="getio">
-   <?php  $decodedData['email']?>
+   <?php echo $decodedData['email']?>
 
       </span>
 </p>   
@@ -84,7 +90,7 @@ if(isset($_GET['password'])) {
 <p onclick="error()" class="email" >
   <span class="utxt">Password!</span>
   <br>
-  <span class="getio">   <?php  $decodedData['password']?>
+  <span class="getio">   <?php echo $decodedData['password']?>
 </span>
 </p>  
 <button onclick="window.location.href='index.html'" class="email"><i class="fa-solid fa-right-from-bracket fa-rotate-180"></i>   Logout</button>  

@@ -34,8 +34,9 @@ file_put_contents($regdataFilename, json_encode($existingData));
 </head>
 
 <body>
+  <center>
+
 <img class="gif1" src="px.gif"/>
-<center>
 <h1>Account create successful please login now !</h1>
 <button onclick="window.location.href='index.html'" class="btn">Login</button>
 </center>

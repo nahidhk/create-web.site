@@ -21,28 +21,28 @@ if(isset($_GET['password'])) {
 <?php
             } else {
 
-             
 include('not.html'); // যদি শর্ত পূর্ণ না হয়, তবে 'not.html' ফাইলটি ইনক্লুড করা হবে
+             
+ // যদি শর্ত পূর্ণ না হয়, তবে 'not.html' ফাইলটি ইনক্লুড করা হবে
           
             }
-        } else {
-
-        
+        } else { 
 include('not.html'); // যদি শর্ত পূর্ণ না হয়, তবে 'not.html' ফাইলটি ইনক্লুড করা হবে
-    exit();        
+       
         }
     } else {
 
       
-include('not.html'); // যদি শর্ত পূর্ণ না হয়, তবে 'not.html' ফাইলটি ইনক্লুড করা হবে
+          echo "<script>window.open('not.html','_self')</script>";
 
     }
 } else {
 
-include('not.html'); // যদি শর্ত পূর্ণ না হয়, তবে 'not.html' ফাইলটি ইনক্লুড করা হবে
+   echo "<script>window.open('nologin.html','_self')</script>";
 
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

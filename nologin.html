@@ -2,32 +2,24 @@
 <html>
 
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sorry</title>
+  <title>No Login</title>
 </head>
 <style>
 body{
- position: fixed;
- top: 0;
- z-index: 100;
-  
+  font-family: 'Source Code Pro', monospace;
 }
-
   img{
-    height: 100%;
     width: 100%;
+    height: 100%;
   }
-  h2{
-    color: #FF7B00;
-    text-align: center;
-  }
-  h3{
-    color: #FF3100;
-    text-align: center;
-  }
-
+  
  .button-24 {
+   font-family: 'Source Code Pro', monospace;
   background: #FF4742;
   border: 1px solid #FF4742;
   border-radius: 6px;
@@ -36,7 +28,7 @@ body{
   color: #FFFFFF;
   cursor: pointer;
   display: inline-block;
-  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+ 
   font-size: 16px;
   font-weight: 800;
   line-height: 16px;
@@ -65,15 +57,13 @@ body{
 
 </style>
 <body>
-<img src="not.png"/>
-<h2>This Account Not Found</h2>
-<h3>You Have A Create Account Now</h3>
 <center>
-  
-<button onclick="window.location.href='index.html'" class="button-24">Create Account</button>
+  <img src="nologin.png"/>
+  <br>
+  <h1>You Have No Login in</h1>
+  <p>please login now</p>
+  <button class="button-24" onclick="window.location.href='index.html'">Login / Registration</button>
 </center>
-
 </body>
 
 </html>
-

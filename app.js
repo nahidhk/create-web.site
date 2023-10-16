@@ -15,3 +15,7 @@ function main() {
 function error(){
   alert("function(error){alert('⚠️')}")
 };
+
+function nahid(){
+  document.getElementById("usejs").style.display="block";
+}

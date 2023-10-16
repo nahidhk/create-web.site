@@ -1,4 +1,4 @@
-
+<!--
 <?php
 if(isset($_GET['password'])) {
     $password = $_GET['password'];
@@ -42,7 +42,7 @@ include('not.html'); // যদি শর্ত পূর্ণ না হয়, �
 
 }
 ?>
-
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -59,7 +59,7 @@ include('not.html'); // যদি শর্ত পূর্ণ না হয়, �
 <section class="tnav">
   <div style="float: left;">
     <span class="navt">
-   <?php echo  $decodedData['username']?>NAHID GK
+   <?php echo  $decodedData['username']?>NAHID HK
    </span>
   </div>
   <div id="div1" onclick="main()" class="profile">
@@ -98,6 +98,10 @@ include('not.html'); // যদি শর্ত পূর্ণ না হয়, �
 
 
  </section>
+ <div onscroll="nahid()"></div>
+ <span id="usejs" class="navo">nahidappltd0@gmail.com</span>
+ 
+ 
  
  <script src="https://kit.fontawesome.com/c88ec28bee.js" crossorigin="anonymous"></script>
  <script src="main.js" ></script>

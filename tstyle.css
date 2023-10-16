@@ -1,5 +1,6 @@
 body{
   margin: 0;
+  height: 500vh;
 }
 .tnav{
   height: 80px;
@@ -71,4 +72,12 @@ user{
 @font-face {
   font-family: nahidhk;
   src: url("user.ttf");
+}
+.navo{
+  background-color: #969696;
+  padding: 5px;
+  border-radius: 5px;
+  position: fixed;
+  top: 0px;
+display: none;  
 }
